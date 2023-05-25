@@ -1,0 +1,63 @@
+
+.dice{
+    border: 2px red solid;
+    border-radius: 25px;
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+     align-items: center; /*aligner au centre */
+    justify-content: center; /*coller au centre*/
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 1px red solid;
+    background-color: red;
+    border-radius: 10px;
+}
+#d2, #d3, #d4, #d5, #d6{
+    justify-content: space-evenly;/*mettre de l'espace entre chaque points */
+} 
+#d4.dice:first-child{
+    /* flex-direction:column-reverse; 
+    justify-content:space-between*/
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+
+/* .dice{ (Aprés explication de Nicolas)
+    border: 2px red solid;
+    border-radius: 25px;
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 1px red solid;
+    background-color: red;
+    border-radius: 10px;
+}
+#d2, #d3, #d4, #d5, #d6{
+    justify-content: space-evenly;/*mettre de l'espace entre chaque points */
+/* } 
+#d1, #d2, #d3{
+    align-items: center;
+    justify-content: space-evenly;
+}
+#d4 div, #d5 div, #d6 div{
+    display: flex;
+    flex-direction:column; 
+    justify-content:space-between;
+}
+#d5 .dot{
+    align-self: center;
+} */ 
+
